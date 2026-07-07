@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found | Breakthrough Gaming</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0b0908" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+
+  <main class="hero">
+    <img class="hero__logo" src="/assets/logo.svg" width="140" height="140" alt="Breakthrough Gaming logo" />
+    <h1 class="hero__title">404<span>Page Not Found</span></h1>
+    <p class="hero__tagline">This page doesn't exist</p>
+    <a class="cta" href="/">
+      <span class="cta__label">Back to Home</span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Breakthrough Gaming</p>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
