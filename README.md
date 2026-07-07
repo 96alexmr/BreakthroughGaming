@@ -2,7 +2,7 @@
 
 Landing page for [breakthrough.network](https://breakthrough.network), a Christian gaming community.
 
-Static site, no build step, deployed to Cloudflare Pages.
+Static site, no build step, deployed to Cloudflare Workers (static assets).
 
 ## Local development
 
@@ -17,10 +17,10 @@ Then open `http://localhost:8000`.
 ```
 npm install -g wrangler
 wrangler login
-wrangler pages deploy .
+wrangler deploy
 ```
 
-Or connect the repo to a Cloudflare Pages project in the dashboard for git-based deploys.
+Or connect the repo to a Cloudflare Workers project in the dashboard for git-based deploys.
 
 ## Structure
 
@@ -33,8 +33,8 @@ assets/                logo, icons, social share image
 robots.txt              search engine crawl rules
 sitemap.xml             search engine sitemap
 site.webmanifest        PWA / home screen metadata
-_redirects              /discord -> Discord invite link
-wrangler.toml           Cloudflare Pages deploy config
+worker.js               serves static assets, redirects /discord
+wrangler.toml           Cloudflare deploy config
 ```
 
 ## Setting the Discord invite link
